@@ -38,7 +38,7 @@ def seed_database():
         db.session.add(admin_employee)
         
         # Create HR
-        hr_password = bcrypt.hashpw(b"hr123", bcrypt.gensalt())
+        hr_password = bcrypt.hashpw(b"hr12345", bcrypt.gensalt())
         hr_user = User(
             email="hr@ems.com",
             password=hr_password,
